@@ -1,0 +1,7 @@
+{
+  "name": "mgo1-frontend",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
