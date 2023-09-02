@@ -115,3 +115,12 @@ export async function updatePolicy(body) {
         return false
     }
 }
+
+export async function getSharedConnections(user_id) {
+    try {
+      return await get(`/api/v1/admin/user/${user_id}/shared_accounts`);
+    } catch (e) { 
+      emitter.emit('error', e) 
+      return false
+    }
+  }
