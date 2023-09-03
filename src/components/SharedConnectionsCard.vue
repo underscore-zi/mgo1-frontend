@@ -18,15 +18,15 @@
                         </router-link>
                     </ion-col>
                     <ion-col size="4">
-                        {{ connection.u2_display_name }} ({{ connection.u2_username }})
+                        {{ connection.display_name }} ({{ connection.username }})
                     </ion-col>
                     <ion-col size="2">
-                        <router-link :to="`/users/${connection.u2_id}`">
+                        <router-link :to="`/users/${connection.user_id}`">
                             Profile
                         </router-link>
                     </ion-col>
                     <ion-col size="2">
-                        <router-link :to="`/admin/player/${connection.u2_id}`">
+                        <router-link :to="`/admin/player/${connection.user_id}`">
                             Manage User
                         </router-link>
                     </ion-col>
