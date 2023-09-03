@@ -43,6 +43,7 @@
           </ion-grid>
         </ion-card-content>
       </ion-card>
+      <SharedConnectionsCard :user_id="user.id"></SharedConnectionsCard>
     </ion-content>
   </ion-page>
 </template>
@@ -52,6 +53,7 @@ import { ref } from 'vue'
 import { useRoute } from 'vue-router';
 import CommonHeader from '@/components/CommonHeader.vue'
 import OverviewCard from '@/components/OverviewCard.vue'
+import SharedConnectionsCard from '@/components/SharedConnectionsCard.vue'
 import { IonPage, IonContent, IonCard, IonRow, IonInput, IonButton } from '@ionic/vue';
 import { useAsyncState } from '@vueuse/core'
 import { getUserSummary } from '@/mgo1/api.js'
