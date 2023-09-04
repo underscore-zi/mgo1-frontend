@@ -27,9 +27,22 @@
           </ion-row>
       </ion-grid>
       <ion-grid>
+        <ion-row >
+          <ion-col>
+            <ion-item>
+              <ion-label>Animal Rank</ion-label>
+              <div slot="end" v-if="statsReady">{{ stats.animalRank() }}</div>
+            </ion-item>
+          </ion-col>
+          <ion-col>
+            <ion-item>
+              
+            </ion-item>
+          </ion-col>
+        </ion-row>
         <ion-row>
           <ion-col>
-            <ion-item  >
+            <ion-item>
               <ion-label>Ranking</ion-label>
               <div slot="end" v-if="rank">{{ rank }}</div>
               <div slot="end" v-else><em>Rank not available</em></div>
@@ -113,7 +126,7 @@ const filterString = computed(() => {
 
 const fieldPairs = computed(() => {
   const fields = []
-  fields.push(['rank', 'points'])
+  //fields.push(['rank', 'points'])
   fields.push(['kills','deaths'])
   fields.push(['kill_streak','death_streak'])
   if(filter.value.period != "archive") fields.push(['suicides','self_stuns'])
