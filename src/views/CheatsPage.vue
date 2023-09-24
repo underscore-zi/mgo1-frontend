@@ -90,7 +90,7 @@ const selectedGameId = computed(() => {
   return selectedGame.value.split(" - ")[1]
 })
 
-const urlBlocks = ["70747468","732f2f3a","6d657661","632e6f67","752f6d6f","676d2f73","002f3373"]
+const urlBlocks = ["3a707474","61732f2f","676d6576","6f632e6f","73752f6d","73676d2f","00002f33"]
 const rawCheats = {
   // North American - English/Spanish
   "SLUS-21243": {
@@ -107,7 +107,7 @@ const rawCheats = {
       ["20199f38","03e00008"],
       ["20199f3c","00000000"]
     ],
-    "url-rewrite": generateUrlRewrite("21322413"),
+    "url-rewrite": generateUrlRewrite("21322414"),
   },
   // Japanese (Original)
   "SLPM-66221": {
@@ -124,7 +124,7 @@ const rawCheats = {
       ["20199ab0","03e00008"],
       ["20199ab4","00000000"],
     ],
-    "url-rewrite": generateUrlRewrite("2130FA73"),
+    "url-rewrite": generateUrlRewrite("2130FA74"),
   },
   // Japanese (Standalone)
   "SLPM-68524": {
@@ -141,7 +141,7 @@ const rawCheats = {
       ["20199af0","03e00008"],
       ["20199af4","00000000"],
     ],
-    "url-rewrite": generateUrlRewrite("2130FA73"),
+    "url-rewrite": generateUrlRewrite("2130FA74"),
   },
   // PAL - English/French
   "SLES-82043": {
@@ -158,7 +158,7 @@ const rawCheats = {
       ["20199790","03e00008"],
       ["20199794","00000000"],
     ],
-    "url-rewrite": generateUrlRewrite("21321E33"),
+    "url-rewrite": generateUrlRewrite("21321E34"),
   },
   // PAL - Spanish
   "SLES-82049": {
@@ -175,7 +175,7 @@ const rawCheats = {
       ["20199790","03e00008"],
       ["20199794","00000000"],
     ],
-    "url-rewrite": generateUrlRewrite("2130a0d3"),
+    "url-rewrite": generateUrlRewrite("2130a0d4"),
   },
   // PAL - Italian
   "SLES-82045": {
@@ -192,7 +192,7 @@ const rawCheats = {
       ["20199790","03e00008"],
       ["20199794","00000000"],
     ],
-    "url-rewrite": generateUrlRewrite("21309c43"),
+    "url-rewrite": generateUrlRewrite("21309c44"),
   },
 }
 
